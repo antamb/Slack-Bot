@@ -4,11 +4,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import com.xebia.xke.slack.http.web.api.client.SlackWebApi;
 
 import me.ramswaroop.jbot.core.slack.Bot;
 
+@Component
 public class TicTacToeBot extends Bot {
 	private static final Logger LOGGER = LoggerFactory
 			.getLogger(TicTacToeBot.class);
