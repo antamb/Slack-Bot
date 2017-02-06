@@ -70,7 +70,6 @@ public class TicTacToeBot extends Bot {
 			reply(session, event, botService.initiateGame());
 		}
 	}
-
 	@Controller(events = EventType.DIRECT_MESSAGE, pattern = "^(\\d+)$")
 	public void onReceiveChoice(WebSocketSession session, Event event,
 			Matcher matcher) {
